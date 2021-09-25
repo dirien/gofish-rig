@@ -1,0 +1,76 @@
+local name = "minectl"
+local version = "0.10.0"
+
+food = {
+    name = name,
+    description = "minectl️️ 🗺️ is a cli for creating Minecraft (java or bedrock) server on different cloud provider.",
+    license = "Apache License 2.0",
+    homepage = "https://github.com/dirien/minectl",
+    version = version,
+    packages = {
+		{
+            os = "darwin",
+            arch = "amd64",
+            url = "https://github.com///releases/download/v0.10.0/minectl_0.10.0_darwin_amd64.tar.gz",
+            sha256 = "772f6aef338105aacfa0526ecedbacbb168bd87966ca8a612868a56337631132",
+            resources = {
+                {
+                    path = name,
+                    installpath = "bin/" .. name,
+                    executable = true
+                }
+            }
+        },
+		{
+            os = "darwin",
+            arch = "arm64",
+            url = "https://github.com///releases/download/v0.10.0/minectl_0.10.0_darwin_arm64.tar.gz",
+            sha256 = "9070871e14c4ea64ab1e11dc8ccbd27804f892a36b8f68493fbf4e3665a31c3b",
+            resources = {
+                {
+                    path = name,
+                    installpath = "bin/" .. name,
+                    executable = true
+                }
+            }
+        },
+		{
+            os = "linux",
+            arch = "amd64",
+            url = "https://github.com///releases/download/v0.10.0/minectl_0.10.0_linux_amd64.tar.gz",
+            sha256 = "83860a31c2d7ffd5e5a734b10c8b50ce57ab825a3e8432a37f5476e88e606575",
+            resources = {
+                {
+                    path = name,
+                    installpath = "bin/" .. name,
+                    executable = true
+                }
+            }
+        },
+		{
+            os = "linux",
+            arch = "arm64",
+            url = "https://github.com///releases/download/v0.10.0/minectl_0.10.0_linux_arm64.tar.gz",
+            sha256 = "c7262c0633f4fc6cee6349e6689c0e7736945428eb067c6b61ab8829c1b0f182",
+            resources = {
+                {
+                    path = name,
+                    installpath = "bin/" .. name,
+                    executable = true
+                }
+            }
+        },
+        {
+            os = "windows",
+            arch = "amd64",
+            url = "https://github.com///releases/download/v0.10.0/minectl_0.10.0_windows_amd64.zip",
+            sha256 = "40c1963c4afd802de14b29833bf11ab27a1ed1506f9fa89b4ee5f4c63f873a94",
+            resources = {
+                {
+                    path = name .. ".exe",
+                    installpath = "bin\\" .. name .. ".exe"
+                }
+            }
+        }
+    }
+}
